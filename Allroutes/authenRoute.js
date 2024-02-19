@@ -2,6 +2,10 @@ const {registrationController,loginController } = require("../controller/authent
 
 const route = require('express').Router();
 
+route.get("/",(req,res)=>{
+    res.send("working")
+})
+
 route.post("/register",registrationController)
 
 route.post("/login",loginController)
